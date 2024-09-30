@@ -53,7 +53,7 @@ public class OrderController {
 
         return "UP";
     }
-    @GetMapping("/welcome")
+   // @GetMapping("/welcome")
     public String greetings(){
 
         return "Welcome, AWS CICD pipeline with springboot App.";
