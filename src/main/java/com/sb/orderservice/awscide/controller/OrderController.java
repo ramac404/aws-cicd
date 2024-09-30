@@ -48,6 +48,15 @@ public class OrderController {
         return new ResponseEntity<>(result,HttpStatus.OK);
     }
 
+    @GetMapping("/health")
+    public String healthCheck(){
 
+        return "UP";
+    }
+    @GetMapping("/welcome")
+    public String greetings(){
+
+        return "Welcome, AWS CICD pipeline with springboot App.";
+    }
 
 }
